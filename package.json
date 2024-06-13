@@ -1,0 +1,19 @@
+{
+  "name": "b21",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start-pug":"pug -w ./template -o ./ -P",
+    "start-scss":"sass --watch assets/scss:assets/css",
+    "start":"npm-run-all --parallel start-pug start-scss",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "pug": "^3.0.3",
+    "sass": "^1.77.5"
+  }
+}
